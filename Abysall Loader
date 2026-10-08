@@ -1,0 +1,13 @@
+getgenv().Abysall = {
+    Legit = true
+}
+
+local BaseUrl = "https://raw.githubusercontent.com/bocaj111004/Abysall/refs/heads/main/"
+
+getgenv().Abysall = {
+    Environment = loadstring(game:HttpGet(BaseUrl .. "Components/Environment.luau"))(),
+    ESPLibrary = loadstring(game:HttpGet(BaseUrl .. "Components/ESP.luau"))(),
+    Legit = true,
+}
+
+loadstring(game:HttpGet(BaseUrl .. "Games/Doors/Loader.luau"))()
